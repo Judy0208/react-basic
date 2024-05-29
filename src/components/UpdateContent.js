@@ -21,7 +21,7 @@ export default class UpdateContent extends Component{
         return (
             <article>
                 <h2>Update</h2>
-                <form action="update_process" method="post"
+                <form action="/update_process" method="post"
                       onSubmit={function (e) {
                           e.preventDefault();
                           this.props.onSubmit(

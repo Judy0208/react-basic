@@ -21,7 +21,7 @@ export default class App extends Component{
                 desc: "Hello React!!"
             },
             subject: {
-                title : "WEB",
+                title : "게시판",
                 sub: "Welcome!!"
             },
             contents: [
@@ -142,6 +142,8 @@ export default class App extends Component{
                         }
                     }.bind(this)}
                 />
+                <br/>
+                <hr/>
                 <TOC data={this.state.contents}
                      onChangePage={function (id) {
                          this.setState({

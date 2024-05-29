@@ -1,0 +1,27 @@
+#outside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+#titles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+    border-radius: 10px 10px;
+    width: 150px;
+    height: 100px;
+    margin: 10px;
+}
+
+#titles a{
+    text-decoration: none;
+    color: black;
+    padding: 45px 65px;
+}
+
+#titles:hover{
+    background-color: darkgrey;
+}

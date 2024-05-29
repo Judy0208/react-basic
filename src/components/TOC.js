@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import "./styles/TOC.css";
 
 export default class TOC extends Component{
     shouldComponentUpdate(newProps, newState) {
@@ -15,24 +16,25 @@ export default class TOC extends Component{
         var i = 0;
         while (i < data.length) {
             list.push(
-                <li key = {data[i].id}>
+                <div id="titles" key = {data[i].id}
+
+                >
                     <a href={"/content/" + data[i].id}
                        data-id={data[i].id}
-                        onClick={function (e){
-                            e.preventDefault();
-                            this.props.onChangePage(e.target.dataset.id);
-                        }.bind(this)}>
+                       onClick={function (e){
+                           e.preventDefault();
+                           this.props.onChangePage(e.target.dataset.id);
+                       }.bind(this)}
+                    >
                         {data[i].title}
                     </a>
-                </li>)
+                </div>)
             i +=1;
         }
         return(
-            <nav>
-                <ul>
+            <div id="outside">
                     {list}
-                </ul>
-            </nav>
+            </div>
         );
     }
 }

@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import "./styles/Subject.css";
 
 export default class Subject extends Component{
     shouldComponentUpdate(newProps, newState) {
@@ -11,11 +12,11 @@ export default class Subject extends Component{
     render() {
         return (
             <header>
-                <h1><a href="/" onClick={function (e){
+                <h1><a id="title" href="/" onClick={function (e){
                     e.preventDefault();
                     this.props.clickWelcome();
-                }.bind(this)}>{this.props.title}</a></h1>
-                {this.props.desc}
+                }.bind(this)}
+                >{this.props.title}</a></h1>
             </header>
         );
     }

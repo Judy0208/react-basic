@@ -1,0 +1,28 @@
+article{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 25px;
+}
+
+#content-title{
+    font-size: 35px;
+    font-weight: bold;
+    /*border: black;*/
+    border-style: solid;
+    background-color: lightgray;
+    width: 500px;
+    text-align: center;
+    /*margin-bottom: 20px;*/
+    display: block;
+    margin: 0 auto;
+    padding: 7px;
+}
+
+#content-detail {
+    margin: 0 auto;
+    padding: 20px 7px;
+    border-style: solid;
+    width: 500px;
+}
