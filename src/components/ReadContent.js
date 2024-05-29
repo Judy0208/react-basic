@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 
-export default class Content extends Component{
+export default class ReadContent extends Component{
     render() {
         return(
             <article>
