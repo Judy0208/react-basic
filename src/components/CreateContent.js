@@ -12,7 +12,7 @@ export default class CreateContent extends Component{
                           this.props.onSubmit(e.target.title.value, e.target.desc.value);
                       }.bind(this)}
                 >
-                    <p><input type="title" name="title" placeholder="Title"/></p>
+                    <p><input type="text" name="title" placeholder="Title"/></p>
                     <p><textarea name="desc" placeholder="Enter Descriptions"/></p>
                     <p><input type="submit" value="글쓰기"/></p>
                 </form>

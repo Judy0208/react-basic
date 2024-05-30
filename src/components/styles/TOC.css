@@ -3,6 +3,9 @@
     justify-content: center;
     align-items: center;
     margin-top: 40px;
+    word-break:inherit;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 #titles{

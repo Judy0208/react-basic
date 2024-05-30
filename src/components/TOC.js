@@ -16,16 +16,13 @@ export default class TOC extends Component{
         var i = 0;
         while (i < data.length) {
             list.push(
-                <div id="titles" key = {data[i].id}
-
-                >
+                <div id="titles" key = {data[i].id}>
                     <a href={"/content/" + data[i].id}
                        data-id={data[i].id}
                        onClick={function (e){
                            e.preventDefault();
                            this.props.onChangePage(e.target.dataset.id);
-                       }.bind(this)}
-                    >
+                       }.bind(this)}>
                         {data[i].title}
                     </a>
                 </div>)

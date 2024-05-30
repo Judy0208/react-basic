@@ -16,7 +16,6 @@ export default class App extends Component{
             mode:'welcome',
             max_content_id: 3,
             welcome:{
-                id: 0,
                 title: "Welcome",
                 desc: "Hello React!!"
             },
@@ -58,11 +57,11 @@ export default class App extends Component{
 
         } else if (mode === 'create') {
             _article = <CreateContent onSubmit={function (_title, _desc) {
-                this.max_content_id += 1;
+                var new_max_id = this.state.max_content_id + 1;
                 var contentList = Array.from(this.state.contents);
                 contentList.push(
                     {
-                        id: this.max_content_id,
+                        id: new_max_id,
                         title: _title,
                         desc: _desc
                     }
@@ -70,7 +69,8 @@ export default class App extends Component{
                 this.setState({
                     contents: contentList,
                     mode: 'read',
-                    selectedId: this.max_content_id
+                    selectedId: new_max_id,
+                    max_content_id: new_max_id
                 })
             }.bind(this)}/>;
 
